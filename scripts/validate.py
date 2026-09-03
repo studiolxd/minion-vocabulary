@@ -20,7 +20,7 @@ PACKS_DIR = ROOT / "packs"
 MANIFEST_PATH = ROOT / "manifest.toml"
 
 # Bumped by hand when a release is cut — see the README.
-VERSION = "2026.09.03"
+VERSION = "2026.09.03.1"
 
 
 def sha256_of(path: pathlib.Path) -> str:

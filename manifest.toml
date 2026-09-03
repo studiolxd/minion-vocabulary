@@ -1,4 +1,4 @@
-version = "2026.09.03"
+version = "2026.09.03.1"
 
 [[packs]]
 path = "packs/apps.toml"
@@ -31,3 +31,7 @@ sha256 = "894e503d9744bf7649e4677af5b1a6ff17b6405a24c46ff6db018ba9b3b07b9e"
 [[packs]]
 path = "packs/sites.toml"
 sha256 = "b2e6528e86ef53fad6ff02fa10ef2f53729ea14c3393de2e4943c4044eaa1fe7"
+
+[[packs]]
+path = "packs/teams.toml"
+sha256 = "becf117380e99debb94d27827a2db8544aed39a6c6583119b3f204ac4824eb6b"
