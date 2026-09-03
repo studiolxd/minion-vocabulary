@@ -1,0 +1,25 @@
+# Adobe Creative Cloud: Photoshop and Illustrator, by name only.
+#
+# A community example, not a built-in pack — it ships in this repository to
+# show what a third-party contribution looks like, and is not loaded by
+# Minion unless someone downloads it. The schema is documented in the root
+# README.md and at the top of packs/macos.toml.
+#
+# No [[commands]] here on purpose: a contextual shortcut is only worth
+# shipping once someone has actually pressed it inside the app and checked
+# what it does, and this pack was written without a copy of either
+# application in front of it. Add commands once that verification has
+# happened — see the README's "alias what the recogniser actually wrote"
+# rule, which is the same discipline for a spoken alias.
+
+category = "Adobe"
+
+[[apps]]
+name = "Photoshop"
+bundle_id = "com.adobe.Photoshop"
+aliases = ["photoshop", "foto shop"]
+
+[[apps]]
+name = "Illustrator"
+bundle_id = "com.adobe.illustrator"
+aliases = ["illustrator", "ilustrador"]

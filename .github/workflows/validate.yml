@@ -1,0 +1,36 @@
+name: Validate packs
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate every pack and regenerate the manifest
+        run: python3 scripts/validate.py
+
+      - name: Fail if the committed manifest is stale
+        if: github.event_name == 'pull_request'
+        run: git diff --exit-code manifest.toml
+
+      - name: Commit a regenerated manifest
+        if: github.event_name == 'push'
+        run: |
+          if git diff --quiet manifest.toml; then
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add manifest.toml
+          git commit -m "Regenerate manifest.toml"
+          git push

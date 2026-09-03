@@ -1,0 +1,33 @@
+version = "2026.09.03"
+
+[[packs]]
+path = "packs/apps.toml"
+sha256 = "a4094abb5f4067fad9295067c73df90d85dda00b2ff1bba58273caf6e92ae213"
+
+[[packs]]
+path = "packs/browsers.toml"
+sha256 = "faa10f83515c9387f04c23f60a4c0005c710206466300c1fca138449481c3d07"
+
+[[packs]]
+path = "packs/community/adobe.toml"
+sha256 = "5cb57788dd29b01e87e18eb76a8ba878945b058267721544283aa16c6a2a3820"
+
+[[packs]]
+path = "packs/dev.toml"
+sha256 = "bf23095a07e0be3958d7590c39fe428f1d430fd716b2149cccb05a6e959d6eac"
+
+[[packs]]
+path = "packs/macos.toml"
+sha256 = "7b2d052bf8fa8fbbd8a0b6ee404a6ee9300f54291acb3b18567056cf661e3a1c"
+
+[[packs]]
+path = "packs/media.toml"
+sha256 = "2f7d9bfbc3ba50b7388629adf907754ef1e3989ba1d9c1e793e632e293d95d6d"
+
+[[packs]]
+path = "packs/office.toml"
+sha256 = "894e503d9744bf7649e4677af5b1a6ff17b6405a24c46ff6db018ba9b3b07b9e"
+
+[[packs]]
+path = "packs/sites.toml"
+sha256 = "b2e6528e86ef53fad6ff02fa10ef2f53729ea14c3393de2e4943c4044eaa1fe7"
